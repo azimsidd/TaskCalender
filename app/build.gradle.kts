@@ -23,13 +23,15 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        signingConfig = signingConfigs.getByName("debug")
     }
 
     buildTypes {
-        debug {
+        getByName("debug") {
             buildConfigField ("String", "BASE_URL", "\"https://dev.frndapp.in:8080/\"")
         }
-        release {
+        getByName("release")  {
+            buildConfigField ("String", "BASE_URL", "\"https://dev.frndapp.in:8080/\"")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
