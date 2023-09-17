@@ -18,11 +18,13 @@ https://drive.google.com/file/d/1oplrbv_VjI5OX3LXrRb0oPmDfxz9DaFR/view?usp=shari
 1. Task creation on the basis of date
 2. Delete task
 3. Can see the list or created task
+4. Pull to refresh
 
 # Technology used
 1. kotlin
-2. jetpack compose
-3. Hilt
-4. Coroutines
+2. MVVM
+3. jetpack compose
+4. Hilt
+5. Coroutines
 
 
