@@ -38,6 +38,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.thecodingshef.taskcalender.presentation.commonComposables.SpacerHeight
 import com.thecodingshef.taskcalender.presentation.commonComposables.toColor
+import com.thecodingshef.taskcalender.ui.theme.Red_CD5C5C
+import com.thecodingshef.taskcalender.ui.theme.WhiteCream
 
 
 @OptIn(ExperimentalMaterialApi::class)
@@ -66,6 +68,7 @@ fun TaskHomeScreen(
                 .background(Color.White)
                 .padding(10.dp)
         ) {
+
             CustomCalendarView(onDateClick = { day, month, year ->
                 onDateClick(day, month, year)
             })
@@ -109,13 +112,13 @@ fun TaskHomeScreen(
         FloatingActionButton(
             onClick = { addTask() },
             shape = RoundedCornerShape(8.dp),
-            containerColor = "#FFFFE0".toColor(),
+            containerColor = Red_CD5C5C,
             elevation = FloatingActionButtonDefaults.elevation(6.dp),
             modifier = Modifier
                 .align(BottomEnd)
                 .padding(30.dp)
         ) {
-            Icon(imageVector = Icons.Default.Add, contentDescription = "", Modifier.size(34.dp))
+            Icon(imageVector = Icons.Default.Add, contentDescription = "", Modifier.size(34.dp), tint = White)
         }
     }
 

@@ -114,7 +114,7 @@ fun AddTaskScreen(
                         .align(
                             CenterEnd
                         ),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.Red),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                     border = BorderStroke(width = 1.dp, color = Color.White),
                     contentPadding = PaddingValues(horizontal = 20.dp, vertical = 8.dp)
                 ) {
