@@ -38,7 +38,6 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.font.Font
@@ -47,6 +46,7 @@ import androidx.compose.ui.unit.dp
 import com.thecodingshef.taskcalender.R
 import com.thecodingshef.taskcalender.model.response.Task
 import com.thecodingshef.taskcalender.presentation.commonComposables.SpacerHeight
+import com.thecodingshef.taskcalender.ui.theme.Red_CD5C5C
 import com.thecodingshef.taskcalender.util.DateFormatter
 
 @OptIn(ExperimentalComposeUiApi::class)
@@ -114,7 +114,7 @@ fun AddTaskScreen(
                         .align(
                             CenterEnd
                         ),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.White),
+                    colors = ButtonDefaults.buttonColors(containerColor = Red_CD5C5C),
                     border = BorderStroke(width = 1.dp, color = Color.White),
                     contentPadding = PaddingValues(horizontal = 20.dp, vertical = 8.dp)
                 ) {
